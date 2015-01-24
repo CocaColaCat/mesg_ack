@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jianping Zhou"]
   spec.email         = ["jianping.zhou.1986@gmail.com"]
   spec.summary       = %q{Wrapper around luosimao message API}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.description   = %q{}
   spec.homepage      = ""
   spec.license       = "MIT"
 

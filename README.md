@@ -1,6 +1,6 @@
 # MesgAck
 
-TODO: Write a gem description
+Wrapper around (luosimou)[http://luosimao.com]
 
 ## Installation
 
@@ -20,7 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+ MesgAck::MesgAck.send_ack(telephone, message)
+```
 
 ## Contributing
 

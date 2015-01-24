@@ -1,13 +1,15 @@
 require 'mesg_ack'
 
-describe MesgAck::MesgAck do
+describe MesgAck::Messager do
 
-	it "should send ack" do
+	it "set dev mode" do
+		
 		MesgAck.setup do |config|
 			config.api_url = "https://www.test.com/api/json"
 			config.api_key = 'test_key'
+			config.dev_mode = true
 		end
-		Net::HTTP.any_instance.should_receive(:start)
- 		MesgAck::MesgAck.send_ack('13811111111', 'send test message use') 
+
+ 		expect(MesgAck::Messager.send_ack(nil, nil)).to eq('you are in dev mode') 
 	end
 end
