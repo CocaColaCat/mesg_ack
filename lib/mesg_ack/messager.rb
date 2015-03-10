@@ -15,7 +15,7 @@ class MesgAck::Messager
 		request.basic_auth("api", MesgAck.api_key)
 		request.set_form_data( { "mobile" => telephone, "message" => message } )
 		resp = http.start { |http| http.request(request) }
-		return resp.code
+		return resp.body
 	end
 
 end
