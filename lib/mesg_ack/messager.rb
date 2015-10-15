@@ -1,7 +1,7 @@
 class MesgAck::Messager
 
 	def self.send_ack(telephone, message)
-		return "you are in dev mode" if MesgAck.dev_mode
+		return if MesgAck.dev_mode
 		return "telephone and message are required" if telephone.nil? || message.nil? 
 		send(telephone, message)
 	end
